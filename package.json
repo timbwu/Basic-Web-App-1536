@@ -1,0 +1,22 @@
+{
+  "name": "basic-web-app-1536",
+  "version": "1.0.0",
+  "description": "Basic web application with node.js",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timbwu/Basic-Web-App-1536.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timbwu/Basic-Web-App-1536/issues"
+  },
+  "homepage": "https://github.com/timbwu/Basic-Web-App-1536#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
