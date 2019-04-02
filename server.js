@@ -28,6 +28,60 @@ app.get('/recipe-image', function(req, res){
     res.send(recipeImage);
 });
 
+app.get('/recipe-image-2', function(req, res){
+    res.setHeader('Content-Type', 'text/html');
+    let recipeImage = recipes.getHTML2();
+    res.send(recipeImage);
+});
+
+app.get('/recipe-image-3', function(req, res){
+    res.setHeader('Content-Type', 'text/html');
+    let recipeImage = recipes.getHTML3();
+    res.send(recipeImage);
+});
+
+app.get('/recipe-image-4', function(req, res){
+    res.setHeader('Content-Type', 'text/html');
+    let recipeImage = recipes.getHTML4();
+    res.send(recipeImage);
+});
+
+app.get('/recipe-image-5', function(req, res){
+    res.setHeader('Content-Type', 'text/html');
+    let recipeImage = recipes.getHTML5();
+    res.send(recipeImage);
+});
+
+app.get('/recipe-image-6', function(req, res){
+    res.setHeader('Content-Type', 'text/html');
+    let recipeImage = recipes.getHTML6();
+    res.send(recipeImage);
+});
+
+app.get('/recipe-image-7', function(req, res){
+    res.setHeader('Content-Type', 'text/html');
+    let recipeImage = recipes.getHTML7();
+    res.send(recipeImage);
+});
+
+app.get('/recipe-image-8', function(req, res){
+    res.setHeader('Content-Type', 'text/html');
+    let recipeImage = recipes.getHTML8();
+    res.send(recipeImage);
+});
+
+app.get('/recipe-image-9', function(req, res){
+    res.setHeader('Content-Type', 'text/html');
+    let recipeImage = recipes.getHTML9();
+    res.send(recipeImage);
+});
+
+app.get('/recipe-image-10', function(req, res){
+    res.setHeader('Content-Type', 'text/html');
+    let recipeImage = recipes.getHTML10();
+    res.send(recipeImage);
+});
+
 //In recipes domain, send fakeDb objects
 app.get('/recipes', function(req, res){
     const allRecipes = Object.keys(fakeDb);
