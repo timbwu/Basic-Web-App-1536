@@ -1,3 +1,4 @@
+const recipes = require('./core/data')
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
@@ -28,21 +29,6 @@ app.get('/recipes', function(req, res){
     res.send(allRecipes);
 });
 
-const recipeList = ["Three Cheese Blend", "Sauteed Green Beans", "5 Min Spaghetti"];
-
-module.exports = {
-//  getHTML: function () {
-//      console.log("called: getHTML");
-//      // Note: this could be from a DB, for now it's just hard-coded
-//      return someData;
-//  },
-  getJSON: function () {
-      console.log("called: getJSON");
-      // Note: this could be from a DB, for now it's just hard-coded
-      return recipeList;
-  }
-};
-
 //For specific recipe in recipes to send to browser
 //:recipesid is any recipe name, if found print object
 app.get('/recipes/:recipeid', function(req, res){
@@ -63,11 +49,11 @@ app.get('/recipe-list', function(req, res){
     
     if(formatOfResponse == 'html-list'){
         res.setHeader('Content-Type', 'text/html');
-        dataList = recipeList.getHTML();
+        dataList = recipes.getHTML();
         res.send(dataList);
     }else if(formatOfResponse == 'json-list'){
         res.setHeader('Content-Type', 'application/json');
-        dataList = recipeList.getJSON();
+        dataList = recipes.getJSON();
         res.send(dataList);
     }
 })

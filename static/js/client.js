@@ -12,10 +12,11 @@ $(document).ready(function(){
             success: function(data){
                 let htmlStr = "<ul>";
                 for(let i = 0; i < data.length; i++){
-                    htmlStr += "<li>" + data[i] + "</li>";
+                    htmlStr += "<li><div class=\"recipe-btn\">" + data[i] + "</div></li>";
                 }
                 htmlStr += "</ul>";
-                $("#allRecipesDiv").html("All recipes: " + data);
+                $("#allRecipesDiv").html(htmlStr);
+//                $("#allRecipesDiv").html("All recipes: " + data);
                 console.log("SUCCESS:", data);
             }
         });
