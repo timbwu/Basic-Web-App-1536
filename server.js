@@ -22,6 +22,12 @@ const fakeDb = {
     'Sauteed Green Beans': {ingredients: 'greenbeans', steps: '3'}
 };
 
+app.get('/recipe-image', function(req, res){
+    res.setHeader('Content-Type', 'text/html');
+    let recipeImage = recipes.getHTML();
+    res.send(recipeImage);
+});
+
 //In recipes domain, send fakeDb objects
 app.get('/recipes', function(req, res){
     const allRecipes = Object.keys(fakeDb);

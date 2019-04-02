@@ -18,7 +18,28 @@ $(document).ready(function(){
                 $("#allRecipesDiv").html(htmlStr);
 //                $("#allRecipesDiv").html("All recipes: " + data);
                 console.log("SUCCESS:", data);
+                //Show individual recipes
+                $('.recipe-btn').click(function(){
+//                    e.preventDefault();
+                    console.log("recipe clicked");
+                    $.ajax({
+                        url: "/recipe-image",
+                        type: "GET",
+                        dataType: "html",
+                        success: function(data){
+                            $("#recipeImg").html(data);
+                            console.log("SUCCESS2:", data);
+                        }
+                    });
+                });
             }
         });
     });
+    
+    function showImage(){
+        console.log("function worked");
+    }
+    
+    
 });
+

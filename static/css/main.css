@@ -67,7 +67,17 @@ footer {
     text-align: left;
 }
 
-ul {
+.recipe-btn{
+    margin: 50px;
+    outline: 1px solid red;
+}
+
+.recipe-btn:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+ul{
     padding: 0;
     list-style-type: none;
 }
