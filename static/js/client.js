@@ -49,7 +49,7 @@ $(document).ready(function(){
                 });
                 
                 //Get image and steps of recipe
-                $("div[id='Cornmeal Mozzerella Sticks']").click(function(){
+                $("div[id='Cornmeal Mozzarella Sticks']").click(function(){
                     var selectedID = $(this).attr('id');
                     $.ajax({
                         url: "/recipe-image-2",
@@ -66,6 +66,7 @@ $(document).ready(function(){
                                 data: {format: "json-list"},
                                 success: function(data){
                                     let htmlStr2 = "<ul>";
+                                    console.log(data.steps.length);
                                     for(let i = 0; i < data.steps.length; i++){
                                         htmlStr2 += "<li>" + data.steps[i] + "</li>";
                                     }
@@ -136,7 +137,7 @@ $(document).ready(function(){
                 });
                 
                 //Get image and steps of recipe
-                $("div[id='Mini Sheperds Pie]").click(function(){
+                $("div[id='Mini Shepherds Pie]").click(function(){
                     var selectedID = $(this).attr('id');
                     $.ajax({
                         url: "/recipe-image-5",
@@ -308,129 +309,6 @@ $(document).ready(function(){
                         }
                     });
                 });
-//                $('#rec1').click(function(){
-//                    var selectedID = $(this).attr('id');
-//                    $.ajax({
-//                        url: "/recipe-image-2",
-//                        type: "GET",
-//                        dataType: "html",
-//                        success: function(data){
-//                            $("#recipeImg").html(data);
-//                        }
-//                    });
-//                });
-//                $('#rec2').click(function(){
-//                    var selectedID = $(this).attr('id');
-//                    console.log("clicked that " + selectedID);
-////                    console.log("recipe clicked");
-//                    $.ajax({
-//                        url: "/recipe-image-3",
-//                        type: "GET",
-//                        dataType: "html",
-//                        success: function(data){
-//                            $("#recipeImg").html(data);
-////                            console.log("SUCCESS2:", data);
-//                        }
-//                    });
-//                });
-//                $('#rec3').click(function(){
-//                    var selectedID = $(this).attr('id');
-//                    console.log("clicked that " + selectedID);
-////                    console.log("recipe clicked");
-//                    $.ajax({
-//                        url: "/recipe-image-4",
-//                        type: "GET",
-//                        dataType: "html",
-//                        success: function(data){
-//                            $("#recipeImg").html(data);
-////                            console.log("SUCCESS2:", data);
-//                        }
-//                    });
-//                });
-//                $('#rec4').click(function(){
-//                    var selectedID = $(this).attr('id');
-//                    console.log("clicked that " + selectedID);
-////                    console.log("recipe clicked");
-//                    $.ajax({
-//                        url: "/recipe-image-5",
-//                        type: "GET",
-//                        dataType: "html",
-//                        success: function(data){
-//                            $("#recipeImg").html(data);
-////                            console.log("SUCCESS2:", data);
-//                        }
-//                    });
-//                });
-//                $('#rec5').click(function(){
-//                    var selectedID = $(this).attr('id');
-//                    console.log("clicked that " + selectedID);
-////                    console.log("recipe clicked");
-//                    $.ajax({
-//                        url: "/recipe-image-6",
-//                        type: "GET",
-//                        dataType: "html",
-//                        success: function(data){
-//                            $("#recipeImg").html(data);
-////                            console.log("SUCCESS2:", data);
-//                        }
-//                    });
-//                });
-//                $('#rec6').click(function(){
-//                    var selectedID = $(this).attr('id');
-//                    console.log("clicked that " + selectedID);
-////                    console.log("recipe clicked");
-//                    $.ajax({
-//                        url: "/recipe-image-7",
-//                        type: "GET",
-//                        dataType: "html",
-//                        success: function(data){
-//                            $("#recipeImg").html(data);
-////                            console.log("SUCCESS2:", data);
-//                        }
-//                    });
-//                });
-//                $('#rec7').click(function(){
-//                    var selectedID = $(this).attr('id');
-//                    console.log("clicked that " + selectedID);
-////                    console.log("recipe clicked");
-//                    $.ajax({
-//                        url: "/recipe-image-8",
-//                        type: "GET",
-//                        dataType: "html",
-//                        success: function(data){
-//                            $("#recipeImg").html(data);
-////                            console.log("SUCCESS2:", data);
-//                        }
-//                    });
-//                });
-//                $('#rec8').click(function(){
-//                    var selectedID = $(this).attr('id');
-//                    console.log("clicked that " + selectedID);
-////                    console.log("recipe clicked");
-//                    $.ajax({
-//                        url: "/recipe-image-9",
-//                        type: "GET",
-//                        dataType: "html",
-//                        success: function(data){
-//                            $("#recipeImg").html(data);
-////                            console.log("SUCCESS2:", data);
-//                        }
-//                    });
-//                });
-//                $('#rec9').click(function(){
-//                    var selectedID = $(this).attr('id');
-//                    console.log("clicked that " + selectedID);
-////                    console.log("recipe clicked");
-//                    $.ajax({
-//                        url: "/recipe-image-10",
-//                        type: "GET",
-//                        dataType: "html",
-//                        success: function(data){
-//                            $("#recipeImg").html(data);
-////                            console.log("SUCCESS2:", data);
-//                        }
-//                    });
-//                });
             }
         });
     });

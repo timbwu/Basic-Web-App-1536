@@ -9,11 +9,11 @@ let recipeImg8 = "<img src=\"./images/r8.jpg\" class=\"img-responsive\" style=\"
 let recipeImg9 = "<img src=\"./images/r9.jpg\" class=\"img-responsive\" style=\"width:100%\" alt=\"Image\">";
 let recipeImg10 = "<img src=\"./images/r10.jpg\" class=\"img-responsive\" style=\"width:100%\" alt=\"Image\">";
 
-let recipeNames = ["Three Cheese Blend", "Cornmeal Mozzerella Sticks", "Vegan Pumpkin Alfredo", "Philly Cheesesteak", "Mini Shepherds Pie", "Homemade Coffee Creamer", "Queso Chicken Nachos", "Sriracha Turkey Meatballs", "Grilled Salmon Kabobs", "Top Hot Dog"];
+let recipeNames = ["Three Cheese Blend", "Cornmeal Mozzarella Sticks", "Vegan Pumpkin Alfredo", "Philly Cheesesteak", "Mini Shepherds Pie", "Homemade Coffee Creamer", "Queso Chicken Nachos", "Sriracha Turkey Meatballs", "Grilled Salmon Kabobs", "Top Hot Dog"];
 
 let stepData = {
     'Three Cheese Blend': {steps: ["Step 1: Prepare bowl", "Step 2: Mix parmesan into bowl", "Step 3: Mix asiago into bowl", "Step 4: Mix romano into bowl"]},
-    'Cornmeal Mozzeralla Sticks': {steps: ["Step 1: Prepare the Coating", "Step 2: Coat the Mozzarella", "Step 3: Fry", "Step 4: Serve"]},
+    'Cornmeal Mozzarella Sticks': {steps: ["Step 1: Prepare the Coating", "Step 2: Coat the Mozzarella", "Step 3: Fry", "Step 4: Serve"]},
     'Vegan Pumpkin Alfredo': {steps: ["Step 1: Combine and mix flour and milk", "Step 2: Chop fresh rosemary", "Step 3: Mix", "Step 4: Add flour-milk mixture, lemon juice, and yeast", "Step 5: Mix sauce until thick", "Step 6: Add your favourite pasta"]},
     'Philly Cheesesteak': {steps: ["Step 1: Pre-heat oven to 350 Fahrenheit", "Step 2: Add ground beef, ketchup, mustard, Worcestershire, and spices", "Step 3: Make pasta", "Step 4: Make cheese", "Step 5: Fill pasta shells and cheese up", "Step 6: Bake for 10 to 15 minutes"]},
     'Mini Shepherds Pie': {steps: ["Step 1: Cut potatoes", "Step 2: Cook potatoes for 20 minutes", "Step 3: Mash potatoes in bowl", "Step 4: Cook ground beef, flour, broth, spices for 10 minutes", "Step 6: Add ketchup", "Step 7: Bake with pie dough"]},
