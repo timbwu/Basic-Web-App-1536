@@ -159,3 +159,122 @@ ul{
 #stepLine{
     border-color: 1px solid orange;
 }
+   #allRecipes-btn {
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+             font-family: 'Gudea', sans-serif;
+        }
+
+
+        #space {
+            width: 100%;
+            height: 2vh;
+
+        }
+
+        #loading {
+
+            height: 5vh;
+            transform: translateY(20vh);
+            animation: rotation 2s infinite linear;
+        }
+
+        @-webkit-keyframes rotation {
+            from {
+                transform: rotate(0deg);
+
+            }
+
+            to {
+                transform: rotate(360deg);
+
+            }
+        }
+
+        #top1 {
+            color: white;
+            text-align: center;
+            font-family: 'Gudea', sans-serif;
+            font-size: 40px;
+            line-height: 70px;
+            transform: translateY(-5vh);
+
+        }
+
+        .font1 {
+            font-family: 'Gudea', sans-serif;
+
+        }
+
+        #f1:hover {
+            background-position: 100% -0.1em;
+            transition: background 1s;
+        }
+
+
+
+
+
+        @import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+
+
+        .container {
+
+            z-index: 1;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            min-height: 10vh;
+            min-height: 35rem;
+            background-blend-mode: soft-light;
+            background-size: cover;
+            background-position: center center;
+/*            padding: 2rem;*/
+
+        }
+
+        .bird {
+            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+            background-size: auto 100%;
+            width: 45vh;
+            height: 505px;
+            will-change: transformactive;
+            animation-name: fly-cycle;
+            animation-duration: 1.5s;
+            animation-delay: -0.5s;
+            animation-timing-function: steps(10);
+            animation-iteration-count: infinite;
+
+        }
+
+        .bird-container {
+            position: absolute;
+            will-change: transform;
+            transform: scale(0.3);
+        }
+
+        @keyframes fly-cycle {
+
+            100% {
+                background-position: -3600px 0;
+            }
+
+        }
+
+        #content-title {
+            text-align: center;
+            font-family: 'Gudea', sans-serif;
+        }
+        #own1{
+                        font-family: 'Gudea', sans-serif;
+
+        }
