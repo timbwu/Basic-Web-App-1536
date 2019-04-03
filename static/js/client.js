@@ -42,6 +42,7 @@ $(document).ready(function(){
                                     }
                                     htmlStr2 += "</ul>";
                                     $("#own1").html(htmlStr2);
+                                    $("#steps").text("Steps");
                                 }
                             });
                         }
@@ -72,6 +73,7 @@ $(document).ready(function(){
                                     }
                                     htmlStr2 += "</ul>";
                                     $("#own1").html(htmlStr2);
+                                    $("#steps").text("Steps");
                                 }
                             });
                         }
@@ -101,6 +103,7 @@ $(document).ready(function(){
                                     }
                                     htmlStr2 += "</ul>";
                                     $("#own1").html(htmlStr2);
+                                    $("#steps").text("Steps");
                                 }
                             });
                         }
@@ -130,6 +133,7 @@ $(document).ready(function(){
                                     }
                                     htmlStr2 += "</ul>";
                                     $("#own1").html(htmlStr2);
+                                    $("#steps").text("Steps");
                                 }
                             });
                         }
@@ -137,7 +141,7 @@ $(document).ready(function(){
                 });
                 
                 //Get image and steps of recipe
-                $("div[id='Mini Shepherds Pie]").click(function(){
+                $("div[id='Mini Shepherds Pie']").click(function(){
                     var selectedID = $(this).attr('id');
                     $.ajax({
                         url: "/recipe-image-5",
@@ -159,6 +163,7 @@ $(document).ready(function(){
                                     }
                                     htmlStr2 += "</ul>";
                                     $("#own1").html(htmlStr2);
+                                    $("#steps").text("Steps");
                                 }
                             });
                         }
@@ -188,6 +193,7 @@ $(document).ready(function(){
                                     }
                                     htmlStr2 += "</ul>";
                                     $("#own1").html(htmlStr2);
+                                    $("#steps").text("Steps");
                                 }
                             });
                         }
@@ -217,6 +223,7 @@ $(document).ready(function(){
                                     }
                                     htmlStr2 += "</ul>";
                                     $("#own1").html(htmlStr2);
+                                    $("#steps").text("Steps");
                                 }
                             });
                         }
@@ -246,6 +253,7 @@ $(document).ready(function(){
                                     }
                                     htmlStr2 += "</ul>";
                                     $("#own1").html(htmlStr2);
+                                    $("#steps").text("Steps");
                                 }
                             });
                         }
@@ -275,6 +283,7 @@ $(document).ready(function(){
                                     }
                                     htmlStr2 += "</ul>";
                                     $("#own1").html(htmlStr2);
+                                    $("#steps").text("Steps");
                                 }
                             });
                         }
@@ -304,6 +313,7 @@ $(document).ready(function(){
                                     }
                                     htmlStr2 += "</ul>";
                                     $("#own1").html(htmlStr2);
+                                    $("#steps").text("Steps");
                                 }
                             });
                         }

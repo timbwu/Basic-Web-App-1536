@@ -1,4 +1,4 @@
-let recipeImg1 = "<img src=\"./images/r1.png\" class=\"img-responsive\" style=\"width:100%\" alt=\"Image\">";
+let recipeImg1 = "<img src=\"./images/r1.jpg\" class=\"img-responsive\" style=\"width:100%\" alt=\"Image\">";
 let recipeImg2 = "<img src=\"./images/r2.jpg\" class=\"img-responsive\" style=\"width:100%\" alt=\"Image\">";
 let recipeImg3 = "<img src=\"./images/r3.jpg\" class=\"img-responsive\" style=\"width:100%\" alt=\"Image\">";
 let recipeImg4 = "<img src=\"./images/r4.jpg\" class=\"img-responsive\" style=\"width:100%\" alt=\"Image\">";

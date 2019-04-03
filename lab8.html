@@ -7,33 +7,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gudea" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+
+        #allRecipes-btn {
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+        }
+
+
+        #space {
+            width: 100%;
+            height: 2vh;
+
+        }
+
+        #loading {
+
+            height: 5vh;
+            transform: translateY(20vh);
+            animation: rotation 2s infinite linear;
+        }
+
+        @-webkit-keyframes rotation {
+            from {
+                transform: rotate(0deg);
+
+            }
+
+            to {
+                transform: rotate(360deg);
+
+            }
+        }
+
+        #top1 {
+            color: white;
+            text-align: center;
+            font-family: 'Gudea', sans-serif;
+            font-size: 40px;
+            line-height: 70px;
+            transform: translateY(-5vh);
+
+        }
+
+        #f1:hover {
+            background-position: 100% -0.1em;
+            transition: background 1s;
+        }
+
+        .font1 {
+            font-family: 'Raleway', Helvetica, Arial, sans-serif;
+
+        }
+
+
+
+        @import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+
+
+        .container {
+            z-index: 1;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            min-height: 10vh;
+            min-height: 35rem;
+            background-blend-mode: soft-light;
+            background-size: cover;
+            background-position: center center;
+            padding: 2rem;
+     
+        }
+
+        .bird {
+            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+            background-size: auto 100%;
+            width: 52vh;
+            height: 505px;
+            will-change: transformactive;
+            animation-name: fly-cycle;
+            animation-duration: 1.5s;
+            animation-delay: -0.5s;
+            animation-timing-function: steps(10);
+            animation-iteration-count: infinite;
+            
+        }
+
+        .bird-container {
+            position: absolute;
+
+            will-change: transform;
+            transform: scale(0.3);
+        }
+
+        @keyframes fly-cycle {
+
+            100% {
+                background-position: -3600px 0;
+            }
+
+        }
+        
+        #content-title{
+            text-align: center;
+        }
+
+
+    </style>
 </head>
 
 <body>
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Logo</a>
+            <div id="space"></div>
+            <div id="con1"> <img id="loading" src="http://www.vitorazevedo.net/external_files/loading_small.png">
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-            </div>
+            <div id="top1">Tricky Recipes</div>
         </div>
     </nav>
 
@@ -49,35 +154,30 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="./images/1.jpg" alt="Image">
+                <img src="./images/1.jpg" alt="Image" id="img1">
                 <div class="carousel-caption">
-                    <h3>Dining in the Treehouse restaurant</h3>
-                    <!--                    <p>Money Money.</p>-->
+                    <h3 class="font1">Dining in the Treehouse restaurant</h3>
                 </div>
             </div>
 
             <div class="item">
-                <img src="./images/2.jpeg" alt="Image">
+                <img src="./images/2.jpeg" alt="Image" id="img1">
                 <div class="carousel-caption">
-                    <h3>
-                        The Treehouse Restaurant
-
-                    </h3>
-                    <!--                    <p>Lorem ipsum...</p>-->
+                    <h3 class="font1">The Treehouse Restaurant</h3>
                 </div>
             </div>
             <div class="item">
-                <img src="./images/3.jpg" alt="Image">
+                <img src="./images/3.jpg" alt="Image" id="img1">
                 <div class="carousel-caption">
-                    <h3>Concept Statement</h3>
+                    <h3 class="font1">Concept Statement</h3>
                     <p>Space &amp; Atmosphere</p>
                 </div>
 
             </div>
             <div class="item">
-                <img src="./images/4.jpg" alt="Image">
+                <img src="./images/4.jpg" alt="Image" id="img1">
                 <div class="carousel-caption">
-                    <h3>Inspiration</h3>
+                    <h3 class="font1">Inspiration</h3>
                     <p>The Treehouse Series - 2011</p>
                 </div>
 
@@ -94,38 +194,45 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    
+    <div id="body22">
+        <h2 id="content-title">Recipes</h2>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-4" id="leftC">
 
-    <div class="container text-center">
-        <h3>Recipes</h3><br>
-        <div class="row">
-            <div class="col-sm-4">
-                <button id="allRecipes-btn">Show All Recipes</button>
-                <div id="allRecipesDiv"></div>
-            </div>
-
-            <div id="recipeImg" class="col-sm-8">
-                <p> View1</p>
-            </div>
-
-            <div class="col-sm-8">
-                <div class="well">
-
-                    <div class="well well-lg">
-
-                        <div class="well-sm">
-                            <p>INSTRUCTIONS</p>
+                    <div id="allRecipes-btn">Show All Recipes</div>
+                    <div id="allRecipesDiv"></div>
+                    <div class="col-sm-4">
+                    <div class="container">
+                        <div class="bird-container">
+                            <div class="bird"></div>
                         </div>
                     </div>
-
-                    <div id="own1">Andy Griffiths is one of the most popular children’s authors in Australia. He has written over 30 books, including nonsense verse, short stories, comic novels and plays. His books have been New York Times bestsellers, won more than 80 children’s choice awards, been adapted as a television cartoon series and sold more than twelve million copies worldwide. He is best known as the author of the bestselling Treehouse series.</div>
                 </div>
-            </div>
-        </div>
-    </div><br>
 
+                </div>
+                <div class="col-sm-8" id="recipeImg">
+                <img src="./images/start.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+
+                    <div id="stepsDiv" class="col-sm-8">
+                        <p class="lead" id="steps">Welcome!</p>
+                        <hr id="stepLine">
+                        <p id="own1">I'm about to change your life with these EASY dinners! We're too busy most days for full-blown meals, but this changes everything. You don't need those expensive meal kits, or cheap frozen food — you just need foil packets! Just a few minutes to prep and you've got a week's worth of meals. It's a game changer. Just 5 minutes on a Sunday afternoon and your meals for the week are sorted.</p>
+                    </div>
+
+                
+
+
+
+
+            </div>
+        </div><br>
+    </div>
     <footer class="container-fluid text-center">
-        <p>Footer Text</p>
+        <p id="f1">BCIT Student</p>
     </footer>
-<script src="js/client.js"></script>
+    <script src="js/client.js"></script>
 </body>
+
 </html>
