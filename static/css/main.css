@@ -1,10 +1,10 @@
-
-@media only screen and (min-width: 990px){
-    #myCarousel{
+@media only screen and (min-width: 990px) {
+    #myCarousel {
         min-height: 600px;
         margin: 0 auto;
     }
 }
+
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
     margin-bottom: 0;
@@ -34,22 +34,22 @@ footer {
 
 @media only screen and (max-width: 990px) {
     #dinner1 {
-        height: 120vh!important;
+        height: 120vh !important;
     }
 
     #dinner2 {
-        height: 110vh!important;
+        height: 110vh !important;
         text-align: left;
     }
 }
-        
+
 @media only screen and (max-width: 768px) {
     #dinner1 {
-        height: 180vh!important;
+        height: 180vh !important;
     }
 
     #dinner2 {
-        height: 160vh!important;
+        height: 160vh !important;
         text-align: left;
     }
 }
@@ -67,20 +67,66 @@ footer {
     text-align: left;
 }
 
-.recipe-btn{
-    margin: 50px;
-    outline: 1px solid red;
-}
-
-.recipe-btn:hover{
+.recipe-btn {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0.2em 0.1em 1em 0;
+    border: 0.16em solid green;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 300;
+    color: floralwhite;
+    /*    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);*/
+    text-align: center;
+    transition: all 0.2s;
     background-color: green;
-    cursor: pointer;
+
 }
 
-.recipeImg{
-    width: 100%;
+.recipe-btn:hover {
+
+    cursor: pointer;
+    text-decoration: none;
+    color: #0C5;
+    border-color: #0C5;
+    background: #FFF;
+
 }
-ul{
+
+.recipeImg {
+    width: 100%;
+
+
+}
+
+ul {
     padding: 0;
     list-style-type: none;
+}
+
+#allRecipes-btn {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    background-color: #4eb5f1;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+#allRecipes-btn:hover {
+    background-color: #4095c6;
+
+}
+
+#recipeImg {
+    width: auto;
+    height: auto;
 }
